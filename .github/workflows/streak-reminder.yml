@@ -1,0 +1,15 @@
+name: 🔥 Daily Streak Reminder
+
+on:
+  schedule:
+    - cron: '0 17 * * *'  # 12 PM hora Perú (UTC-5)
+  workflow_dispatch:       # También se puede ejecutar manualmente
+
+jobs:
+  send-whatsapp:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send WhatsApp reminder via CallMeBot
+        run: |
+          curl -s "https://api.callmebot.com/whatsapp.php?phone=51966702745&text=%F0%9F%94%A5+%C2%A1No+olvides+tu+racha+de+GitHub+hoy%21+Abre+Claude+Dispatch+y+escribe%3A+Haz+un+commit+de+racha+en+el+repo+Daily-Streak-XD&apikey=6640415"
+          echo "✅ Reminder sent!"
