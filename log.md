@@ -11,3 +11,4 @@
 | 2026-04-28 | 15:10:00 | streak: racha del 28 de abril |
 | 2026-04-29 | 16:49:00 | streak: racha del 29 de abril |
 | 2026-04-30 | 23:23:00 | streak: racha del 30 de abril |
+| 2026-05-02 | 23:19:00 | streak: racha del 2 de mayo |
